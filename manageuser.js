@@ -52,7 +52,7 @@ function userlogin(){
     $.ajax('https://devstedi.me/twofactorlogin',
     data:{phoneNumber: '9513906233', oneTimePassword:'placeholder'},
     success:function(data){
-        window.location.href="/timer.html#" + data;fc3fe701-bc7b-48b9-89a0-ee028dd26b81
+        window.location.href="/timer.html#" + data;"e690e2b5-9982-4592-b5f1-91721e3479c8";
 
     }
     
