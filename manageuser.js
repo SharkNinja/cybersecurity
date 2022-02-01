@@ -49,14 +49,15 @@ function checkexpiredtoken(token){
 function userlogin(){
     setuserpassword();
     setusername();
-    $.ajax('https://devstedi.me/twofactorlogin',
-    data:{phoneNumber: '9513906233', oneTimePassword:'placeholder'},
+    $.ajax({
+        url:'https://devstedi.me/twofactorlogin',
+    data: JSON.stringify({phoneNumber: userName, oneTimePassword: password}),
     success:function(data){
-        window.location.href="/timer.html#" + data;"e690e2b5-9982-4592-b5f1-91721e3479c8";
+     window.location.href="/timer.html#" + data;"e690e2b5-9982-4592-b5f1-91721e3479c8";
 
     }
     
-    );
+ } );
 
 }
 
